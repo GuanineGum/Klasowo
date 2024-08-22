@@ -1,11 +1,8 @@
-# Wezuwiusz
+# Klasowo
 
 Nieoficjalny klient dziennika VULCAN UONET+ dla ucznia i rodzica. Fork projektu Wulkanowy,
 skupiony na rozwoju wsparcia dla mobilnego API. W obecnej chwili tryb Hybrydowy SDK jest domyślny,
 a zdecydowana większość requestów jest przetwarzana przez API mobilne.
-
-[Oficjalny kanał na telegramie](https://t.me/dzienniczekwezuwiusz)
-[Oficjalny chat na telegramie](https://t.me/wezuwiuszchat)
 
 ## Funkcje
 
@@ -33,11 +30,11 @@ a zdecydowana większość requestów jest przetwarzana przez API mobilne.
 
 ## Pobierz
 
-Beta 1 jest już dostępna do pobrania z [GitHub Releases](https://github.com/wezuwiusz/neowulkanowy/releases/tag/3.0.0-beta1)!
+
 
 ## Zbudowana za pomocą
 
-* [Wezuwiusz SDK](https://github.com/wezuwiusz/sdk)
+* [Wulkanowy SDK](https://github.com/wulkanowy/sdk)
 * [Kotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)
 * [Hilt](https://dagger.dev/hilt/)
 * [Room](https://developer.android.com/topic/libraries/architecture/room)
