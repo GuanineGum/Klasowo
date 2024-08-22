@@ -19,15 +19,15 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "ovh.pzpl.wezuwiusz"
-        testApplicationId "ovh.pzpl.tests.wezuwiusz"
+        applicationId "ovh.pzpl.guanine"
+        testApplicationId "ovh.pzpl.tests.guanine"
         minSdkVersion 21
         targetSdkVersion 34
         versionCode 178
         versionName "3.0-beta2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        resValue "string", "app_name", "Wezuwiusz"
+        resValue "string", "app_name", "guanine"
 
         if (System.env.SET_BUILD_TIMESTAMP) {
             buildConfigField "long", "BUILD_TIMESTAMP", String.valueOf(System.currentTimeMillis())
@@ -56,15 +56,15 @@ android {
             shrinkResources true
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
             signingConfig signingConfigs.release
-            buildConfigField "String", "MESSAGES_BASE_URL", "\"https://messages.wezuwiusz.eu/\""
+            buildConfigField "String", "MESSAGES_BASE_URL", "\"https://messages.guanine.fun/\""
         }
         debug {
             minifyEnabled false
             shrinkResources false
-            resValue "string", "app_name", "Wezuwiusz DEV"
+            resValue "string", "app_name", "Klasowo DEV"
             applicationIdSuffix ".dev"
             versionNameSuffix "-dev"
-            buildConfigField "String", "MESSAGES_BASE_URL", "\"https://messages.wezuwiusz.eu/\""
+            buildConfigField "String", "MESSAGES_BASE_URL", "\"https://messages.guanine.fun/\""
         }
     }
 
@@ -156,7 +156,7 @@ ext {
 }
 
 dependencies {
-    implementation "com.github.wezuwiusz:neowulkanowy-sdk:SNAPSHOT"
+    implementation "com.github.guanine:neowulkanowy-sdk:SNAPSHOT"
 
     coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:2.0.4"
 
@@ -179,7 +179,7 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
     implementation "com.google.android.material:material:1.10.0"
-    implementation "com.github.wezuwiusz:material-chips-input:3.0.0-legacy"
+    implementation "com.github.guanine:material-chips-input:3.0.0-legacy"
     implementation "com.github.PhilJay:MPAndroidChart:v3.1.0"
     implementation "com.github.lopspower:CircularImageView:4.3.0"
 
@@ -210,7 +210,7 @@ dependencies {
     implementation "com.github.bastienpaulfr:Treessence:1.1.2"
     implementation "com.mikepenz:aboutlibraries-core:$about_libraries"
     implementation "io.coil-kt:coil:2.6.0"
-    implementation "com.github.wezuwiusz:AppKillerManager:3.0.1"
+    implementation "com.github.guanine:AppKillerManager:3.0.1"
     implementation "me.xdrop:fuzzywuzzy:1.4.0"
     implementation "com.fredporciuncula:flow-preferences:1.9.1"
     implementation "org.apache.commons:commons-text:1.12.0"
