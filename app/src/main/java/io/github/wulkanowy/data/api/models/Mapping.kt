@@ -1,4 +1,4 @@
-package io.github.wulkanowy.data.api.models
+package io.github.guanine.data.api.models
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

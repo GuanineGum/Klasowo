@@ -1,7 +1,7 @@
-package io.github.wulkanowy.data.api.services
+package io.github.guanine.data.api.services
 
-import io.github.wulkanowy.data.api.models.Mapping
-import io.github.wulkanowy.data.db.entities.AdminMessage
+import io.github.guanine.data.api.models.Mapping
+import io.github.guanine.data.db.entities.AdminMessage
 import retrofit2.http.GET
 import javax.inject.Singleton
 

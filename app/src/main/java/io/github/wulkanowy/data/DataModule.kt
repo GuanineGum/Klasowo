@@ -1,4 +1,4 @@
-package io.github.wulkanowy.data
+package io.github.guanine.data
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -13,11 +13,11 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import io.github.wulkanowy.data.api.services.WulkanowyService
-import io.github.wulkanowy.data.db.AppDatabase
-import io.github.wulkanowy.data.db.SharedPrefProvider
-import io.github.wulkanowy.data.repositories.PreferencesRepository
-import io.github.wulkanowy.utils.AppInfo
+import io.github.guanine.data.api.services.WulkanowyService
+import io.github.guanine.data.db.AppDatabase
+import io.github.guanine.data.db.SharedPrefProvider
+import io.github.guanine.data.repositories.PreferencesRepository
+import io.github.guanine.utils.AppInfo
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient

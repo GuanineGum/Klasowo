@@ -46,8 +46,6 @@ interface MainView : BaseView {
 
     fun openMoreDestination(destination: Destination)
 
-    fun navigateToEnd()
-
     interface MainChildView {
 
         fun onFragmentReselected()

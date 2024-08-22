@@ -1,4 +1,4 @@
-package io.github.wulkanowy.data
+package io.github.guanine.data
 
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
@@ -267,7 +267,7 @@ inline fun <DatabaseType, ApiType, OutputType> networkBoundResource(
     emit(Resource.Loading())
 
     val data = query().first()
-    if (false) {
+    if (shouldFetch(data)) {
         emit(Resource.Intermediate(data))
 
         try {

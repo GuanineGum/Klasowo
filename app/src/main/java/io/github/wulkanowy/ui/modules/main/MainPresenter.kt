@@ -106,7 +106,13 @@ class MainPresenter @Inject constructor(
         }
     }
 
-    private fun shouldShowBottomNavigation(destination: BaseView) = false
+    private fun shouldShowBottomNavigation(destination: BaseView) = when (destination) {
+        is AccountView,
+        is StudentInfoView,
+        is AccountDetailsView -> false
+
+        else -> true
+    }
 
     fun onAccountManagerSelected(): Boolean {
         if (studentsWitSemesters.isNullOrEmpty()) return true

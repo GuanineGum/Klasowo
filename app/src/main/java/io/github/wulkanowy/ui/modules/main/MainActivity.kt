@@ -33,7 +33,6 @@ import io.github.wulkanowy.ui.modules.Destination
 import io.github.wulkanowy.ui.modules.account.accountquick.AccountQuickDialog
 import io.github.wulkanowy.ui.modules.auth.AuthDialog
 import io.github.wulkanowy.ui.modules.captcha.CaptchaDialog
-import io.github.wulkanowy.ui.modules.end.EndFragment
 import io.github.wulkanowy.ui.modules.settings.appearance.menuorder.AppMenuItem
 import io.github.wulkanowy.utils.AnalyticsHelper
 import io.github.wulkanowy.utils.AppInfo
@@ -134,7 +133,6 @@ class MainActivity : BaseActivity<MainPresenter, ActivityMainBinding>(), MainVie
 
         presenter.onAttachView(this, destination)
         inAppUpdateHelper.checkAndInstallUpdates()
-        navigateToEnd()
     }
 
     override fun onResume() {
@@ -362,11 +360,5 @@ class MainActivity : BaseActivity<MainPresenter, ActivityMainBinding>(), MainVie
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         navController.onSaveInstanceState(outState)
-    }
-
-    override fun navigateToEnd() {
-        binding.mainToolbar.isVisible = false
-        pushView(EndFragment())
-        onBackCallback?.isEnabled = false
     }
 }

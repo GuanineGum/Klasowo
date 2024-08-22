@@ -12,16 +12,13 @@ import javax.inject.Inject
 class LoginPresenter @Inject constructor(
     private val wulkanowyRepository: WulkanowyRepository,
     errorHandler: ErrorHandler,
-    studentRepository: StudentRepository,
-    private val syncManager: SyncManager
+    studentRepository: StudentRepository
 ) : BasePresenter<LoginView>(errorHandler, studentRepository) {
 
     override fun onAttachView(view: LoginView) {
         super.onAttachView(view)
         view.initView()
         Timber.i("Login view was initialized")
-        syncManager.stopSyncWorker()
-        view.navigateToEnd()
     }
 
     fun updateSdkMappings() {

@@ -1,4 +1,4 @@
-package io.github.wulkanowy
+package io.github.guanine
 
 import android.app.Application
 import android.util.Log.DEBUG
@@ -9,15 +9,15 @@ import androidx.work.Configuration
 import com.yariksoffice.lingver.Lingver
 import dagger.hilt.android.HiltAndroidApp
 import fr.bipi.treessence.file.FileLoggerTree
-import io.github.wulkanowy.data.repositories.PreferencesRepository
-import io.github.wulkanowy.ui.base.ThemeManager
-import io.github.wulkanowy.utils.ActivityLifecycleLogger
-import io.github.wulkanowy.utils.AnalyticsHelper
-import io.github.wulkanowy.utils.AppInfo
-import io.github.wulkanowy.utils.CrashLogExceptionTree
-import io.github.wulkanowy.utils.CrashLogTree
-import io.github.wulkanowy.utils.DebugLogTree
-import io.github.wulkanowy.utils.RemoteConfigHelper
+import io.github.guanine.data.repositories.PreferencesRepository
+import io.github.guanine.ui.base.ThemeManager
+import io.github.guanine.utils.ActivityLifecycleLogger
+import io.github.guanine.utils.AnalyticsHelper
+import io.github.guanine.utils.AppInfo
+import io.github.guanine.utils.CrashLogExceptionTree
+import io.github.guanine.utils.CrashLogTree
+import io.github.guanine.utils.DebugLogTree
+import io.github.guanine.utils.RemoteConfigHelper
 import timber.log.Timber
 import javax.inject.Inject
 
